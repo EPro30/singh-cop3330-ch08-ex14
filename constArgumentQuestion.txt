@@ -1,0 +1,15 @@
+Question 1. Can we declare a non-reference function argument const (e.g., void f(const int);)?
+Answer 1. Yes, we can declare a non-refrence function argument const.
+
+Question 2. What might that mean?
+Answer 2. By using the keyword const we can prevent the parameter value from being modified by the function.
+
+Question 3. Why might we want to do that?
+Answer 3. We may use it in programs where we need a constant value to perform some operations.
+		  For example, we can use it to find simple interest (requires a constant rate), area (pi is constant), 
+		  and find solution to any physics numerical that uses constant values like gravity, density, etc.
+
+Question 4. Why don’t people do that often?
+Answer 4. The function is executed, the caller will never know about modification made to the parameter.
+		  If the parameter values were changed, no one except for the function will know about the updated values.
+		  It creates an ambiguity between the implemented function and the caller.
